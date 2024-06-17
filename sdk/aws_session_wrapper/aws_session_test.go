@@ -7,6 +7,7 @@ import (
 )
 
 func TestAWSSessionProperties(t *testing.T) {
+	
 	var sess AWSSession
 
 	// Check ConnectProxy Properties
@@ -29,4 +30,5 @@ func TestAWSSessionProperties(t *testing.T) {
 	}); !ok {
 		t.Errorf("AWSSession does not have method ConnectSessionByCredentials")
 	}
+	
 }
